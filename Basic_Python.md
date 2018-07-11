@@ -1,60 +1,105 @@
 ##Help System:
+
 The help system is the first thing we must learn for a new language. In Python, if we know the exact name of a
 function and want to check its usage, we can call help(function_name).
+
 can call help(function_name). This function returns the help related to python module, object or method if it is called with respective argument; but without any argument it will return the help related to currently running programming module.
+
 Example: help(), help(str)
 
 = assigns the value on its right-hand side to a self-defined variable name on its left-hand side.
+
 Binary arithmetic operators +, -, \*, / are only performed to numbers. To do these operations element-wisely, use the zip() function or modules like 'numpy'.
+
 Logical operators: not, and, or. Logical values: True, False.
-Python, especially Pandas, Numpy, and Scikit-Learn, missing values are marked as NaN.
+
+Python, especially Pandas, Numpy, and Scikit-Learn, mark missing values as NaN.
 
 
 ##Data types in Python
+
 There are five standard data types in Python:
+
 Numbers
+
 String
+
 List
+
 Tuple
+
 Dictionary
+
 Unlike C, Python does not require explicit type declaration. It sets the variable type based on the value that is assigned to it. The variable type will change along with the change of the variable value.
+
 Example:
+
 var = 11 \#The data type of var is number
+
 var = 'python' \#The 'var' variable is now of string type.
+
 To find the type of a certain variable, use the function "type()".
 
+
 ###Numbers
+
 int: a = 10 \#Signed integer
+
 long: a = 123L \#(L) stands for long integers; they can also be represented in octal and hexadecimal
+
 float: a = 45.67 \#(.) marks floating point real values
+
 complex: a = 1 + 1J \#(J) is the imaginary part
 
+
 ###String
+
 String variables are enclosed by quotes. Python use single quotes ' double quotes " and triple quotes """ to denote literal strings. The triple quoted string """ will automatically continue across the end of the line statement.
+
 Example:
+
 var1 = 'hello world'
+
 var2 = "I'm good."
+
 var3 = """This is a string that will
+
 span across multiple lines."""
 
+
 ###List
+
 Declare list variables using brackets []. It can contain a series of values of different types.
+
 All lists in Python are zero-based indexed. To combine two or more lists into a long one, use the method 'extend()'.
+
 Example:
+
 A = [] \#This is a blank list variable
+
 B = [1, 23, 'bye'] \#Lists can contain different variable types.
+
 C = [[1, 2], ['SEE'], []]
+
 s1 = [1, 2, 3]
+
 s2 = [4, 5]
+
 s3 = s1.extend(s2) \#s3 is now [1, 2, 3, 4, 5]
 
+
 Logical list operation:
+
 \#Use the zip() function
+
 \#logical lists:
+
 logi_1 = [True, True, False]
+
 logi_2 = [False, True, True]
 
 logi_12 = [logi_1 and logi_2 for i in range(len(logi_1))]
+
 print(logi_12)
 
 \#Use the numpy module:
